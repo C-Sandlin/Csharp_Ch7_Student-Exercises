@@ -36,7 +36,46 @@ namespace StudentExercises
             Jim.ShowAssignedExercises();
             Erin.ShowAssignedExercises();
 
+            // Challenge 1
+            D41.StudentList.Add(Dwight);
+            D41.StudentList.Add(Andy);
 
+            N42.StudentList.Add(Jim);
+            D43.StudentList.Add(Erin);
+
+            Console.WriteLine("_____________");
+            foreach (Student student in D41.StudentList)
+            {
+                Console.WriteLine($"{student.FirstName}");
+            }
+            Console.WriteLine("_____________");
+            foreach (Student student in N42.StudentList)
+            {
+                Console.WriteLine($"{student.FirstName}");
+            }
+            Console.WriteLine("_____________");
+            foreach (Student student in D43.StudentList)
+            {
+                Console.WriteLine($"{student.FirstName}");
+            }
+
+            var AllStudents = new List<Student>();
+            AllStudents.Add(Dwight);
+            AllStudents.Add(Jim);
+            AllStudents.Add(Erin);
+            AllStudents.Add(Andy);
+
+            var AllExercises = new List<Exercise>();
+            AllExercises.Add(DunderMifflinInfinity);
+            AllExercises.Add(PaperFinder9000);
+            AllExercises.Add(ScottsTots);
+            AllExercises.Add(Bracket);
+
+
+            // foreach (Exercise exercise in AllExercises)
+            // {
+            //     Console.WriteLine($"all exercises includes: {exercise.Name}");
+            // }
         }
     }
 }

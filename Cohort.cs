@@ -6,14 +6,12 @@ namespace StudentExercises
     class Cohort
     {
         public string CohortName { get; set; }
-        public List<Student> StudentList { get; set; }
-        public List<Instructor> InstructorList { get; set; }
+        public List<Student> StudentList { get; set; } = new List<Student>();
+        public List<Instructor> InstructorList { get; set; } = new List<Instructor>();
 
         public Cohort(string cohortname)
         {
             CohortName = cohortname;
-            StudentList = new List<Student>();
-            InstructorList = new List<Instructor>();
         }
     }
 }
